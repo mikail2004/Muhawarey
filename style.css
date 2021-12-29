@@ -1,0 +1,296 @@
+/* ----------------GENERAL----------------- */
+body {
+    background-color: #3D3D3D;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: adil;
+  src: url(Aadil.ttf);
+}
+
+@font-face {
+  font-family: jamel;
+  src: url(Jameel.ttf);
+}
+
+@font-face {
+  font-family: alvi;
+  src: url(alvi.ttf);
+}
+  
+/* ----------------BUTTONS----------------- */
+.nav-button {
+  background-color: #DB7373;
+  border-radius: 20px;
+  width: 55px;
+  display: block;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.buttons{
+  display: grid;
+  grid-template-columns: repeat(5, 0.1fr);
+  text-align: center;
+  justify-content: center;
+  margin-left: 22.5%;
+}
+
+.nav-button:hover{
+  background-color: #db7373cb;
+}
+
+/* ----------------TEXT----------------- */
+
+h1 {
+    color: #fff;
+    font-size: 100px;
+    text-align: center;
+    margin-top: 60px;
+    font-family: adil, serif;
+}
+
+p {
+    color: #DB7373;
+    font-family: 'Roboto', sans-serif, 'Jamel';
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    font-family: jamel, sans-serif;
+    background-color: #DB7373;
+    border-radius: 20px;
+    width: 300px;
+    padding: 1px 30px 1px 20px;
+    height: max-content;
+}
+
+h3 {
+    /*color: #DB7373;*/
+    color:#fff;
+    text-align: center;
+    font-size: 25px;
+    font-family: jamel, sans-serif;
+}
+
+h4 {
+    color: #DB7373;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    margin-top: -50px;
+}
+
+h5{
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: -15px;
+}
+
+.gotopbtn{
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background: #DB7373;
+  bottom: 40px;
+  right: 50px;
+  border-radius: 50px;
+  text-decoration: none;
+  text-align: center;
+  line-height: 50px;
+  color: #3D3D3D;
+  font-size: 22px;
+}
+
+.gotopbtn:hover{
+  background-color: #db7373cb;
+}
+
+/* ----------------SEARCH BAR----------------- */
+
+.search-bar {
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    width: 300px;
+    height: 40px;
+    border: 2px solid #fff;
+    background-color: #fff;
+    padding: 0px 10px;
+    border-radius: 50px;
+}
+
+.search-table {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.search {
+    border: none;
+    height: 100%;
+    width: 100%;
+    padding: 0px 0px;
+    font-size: 18px;
+    font-family: 'Roboto-Thin', jamel, sans-serif;
+    color : #DB7373;
+    text-align: right;
+}
+
+.search:focus{
+    outline: none;
+}
+
+.gg-undo {
+    color: #3D3D3D;
+}
+
+/* ----------------IDIOM CARDS----------------- */
+
+#charactersList {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 530px);
+  /*grid-template-columns: repeat(1, 530px);*/
+  align-content: center;
+  justify-content: center;
+}
+
+.idiomsList {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 530px);
+  align-content: center;
+  justify-content: center;
+}
+
+.character {
+  list-style-type: none;
+  background-color: #534b4b;
+  border-radius: 20px;
+  padding: 0px 15px 30px 0px;
+  margin-bottom: 10px;
+  width: 500px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-align: right;
+  font-family: alvi;
+}
+
+/* ----------------INDEX CARDS----------------- */
+
+.content{
+  display: grid;
+  grid-template-columns: repeat(5, 0.1fr);
+  text-align: center;
+  justify-content: center;
+  margin-top: 2%;
+  margin-left: 3%;
+}
+
+.card {
+  height: 100px;
+  margin-bottom: 20px;
+  width: 100px;
+  border-radius: 20px;
+  background-color: #4b4b4b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
+
+.card:hover {
+  background-color: #555;
+}
+
+/* ----------------FOOTER----------------- */
+
+footer {
+  text-align: center;
+  padding: 2px;
+  color: white;
+  font-size: 20px;
+  background-color: #555;
+  font-family: 'Roboto-Thin', sans-serif;
+  color: white;
+  margin-top: 13px;
+}
+
+/* ----------------MOBILE VIEW----------------- */
+
+  /* Responsive columns */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content{
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: repeat(3, 0.1fr);
+      text-align: center;
+      justify-content: center;
+      margin-top: 1.5rem;
+      margin-right: 0.5rem;
+      margin-left: 0;
+    }
+
+    h2{
+      width: 270px;
+      padding: 1px 30px 1px 30px;
+    }
+
+    .gotopbtn{
+      bottom: 10px;
+      right: 10px;
+    }
+
+    .nav-button {
+      margin-right: 10px;
+      margin-left: auto;
+    }
+    
+    .buttons{
+      margin-left: 14%;
+    }
+
+    #charactersList {
+      padding-inline-start: 0;
+      display: grid;
+      grid-template-columns: repeat(1, 0.1fr);
+    }
+
+    .idiomsList {
+      padding-inline-start: 0;
+      display: grid;
+      grid-template-columns: repeat(1, 0.1fr);
+    }
+
+    .character {
+      list-style-type: none;
+      background-color: #534b4b;
+      border-radius: 20px;
+      margin-bottom: 10px;
+      width: 300px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+      text-align: right;
+      font-family: alvi;
+    }
+  }
+
+
+
